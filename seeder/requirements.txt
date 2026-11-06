@@ -1,0 +1,4 @@
+pymongo==4.10.1
+Faker==33.1.0
+python-dotenv==1.0.1
+bcrypt==4.2.1

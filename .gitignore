@@ -1,0 +1,38 @@
+# --- secrets -----------------------------------------------------------------
+# Every .env variant is ignored, then the two files that are safe to publish are
+# allowed back in. A real connection string or JWT secret must never be
+# committed: GitHub repositories are easy to search, and git keeps deleted
+# content in its history forever.
+.env
+.env.*
+!.env.example
+!.env.development
+
+# --- node --------------------------------------------------------------------
+node_modules/
+dist/
+build/
+.vite/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# --- python ------------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# --- vercel / render ---------------------------------------------------------
+.vercel/
+
+# --- editors and os ----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- local test data ---------------------------------------------------------
+# the optional offline replica set from README section 6.7
+.mongo-test-data/
